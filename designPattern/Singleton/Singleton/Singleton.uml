@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_kox0gENNEea5H68GOy18Xg" name="Singleton">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_shjHkENNEea5H68GOy18Xg">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_o_Ie0ENPEea5H68GOy18Xg" name="com.rickcodetalk.singleton">
+    <packagedElement xmi:type="uml:Class" xmi:id="_uNh2UENPEea5H68GOy18Xg" name="Singleton">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_x03JYENPEea5H68GOy18Xg" name="instance" visibility="private" isStatic="true" type="_uNh2UENPEea5H68GOy18Xg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5d7zkENPEea5H68GOy18Xg" name="getInstance" isStatic="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ARS9wENQEea5H68GOy18Xg" type="_uNh2UENPEea5H68GOy18Xg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
