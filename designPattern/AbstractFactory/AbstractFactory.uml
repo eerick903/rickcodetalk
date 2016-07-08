@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_awWUkEQCEeaGGeSOp5YxQw" name="AbstractFactory">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_1bsD4EQEEeaFd8CxqyRyLQ">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8g4k8EQEEeaFd8CxqyRyLQ" name="com.rickcodetalk.abstractFactory">
+    <packagedElement xmi:type="uml:Class" xmi:id="_BpwjQEQFEeaFd8CxqyRyLQ" name="UIToolKit" isAbstract="true">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JGMfoEQFEeaFd8CxqyRyLQ" name="createProductA" isAbstract="true"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_e0QHgEQFEeaFd8CxqyRyLQ" name="createProductB" isAbstract="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hwLGEEQFEeaFd8CxqyRyLQ" name="WindowUIToolkit">
+      <generalization xmi:type="uml:Generalization" xmi:id="_EFGu4EQGEeaFd8CxqyRyLQ" general="_BpwjQEQFEeaFd8CxqyRyLQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qOKmEEQFEeaFd8CxqyRyLQ" name="createProductA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_snE-MEQFEeaFd8CxqyRyLQ" name="createProductB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9NQtUEQFEeaFd8CxqyRyLQ" name="MacUIToolkit">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Ev70kEQGEeaFd8CxqyRyLQ" general="_BpwjQEQFEeaFd8CxqyRyLQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_AKfTcEQGEeaFd8CxqyRyLQ" name="createProductA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BrhBUEQGEeaFd8CxqyRyLQ" name="createProductB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_I3ccgEQGEeaFd8CxqyRyLQ" name="Button" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PmgVgEQGEeaFd8CxqyRyLQ" name="MacButton">
+      <generalization xmi:type="uml:Generalization" xmi:id="_WSwyIEQGEeaFd8CxqyRyLQ" general="_I3ccgEQGEeaFd8CxqyRyLQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_P6XFoEQGEeaFd8CxqyRyLQ" name="WindowButton">
+      <generalization xmi:type="uml:Generalization" xmi:id="_X1gXQEQGEeaFd8CxqyRyLQ" general="_I3ccgEQGEeaFd8CxqyRyLQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eyohcEQGEeaFd8CxqyRyLQ" name="ScrollBar" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oTfzsEQGEeaFd8CxqyRyLQ" name="MacScrollBar">
+      <generalization xmi:type="uml:Generalization" xmi:id="_teAJsEQGEeaFd8CxqyRyLQ" general="_eyohcEQGEeaFd8CxqyRyLQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_q3y8cEQGEeaFd8CxqyRyLQ" name="WindowScrollBar">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uRfcIEQGEeaFd8CxqyRyLQ" general="_eyohcEQGEeaFd8CxqyRyLQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_2oduIEQGEeaFd8CxqyRyLQ" name="create" client="_hwLGEEQFEeaFd8CxqyRyLQ" supplier="_P6XFoEQGEeaFd8CxqyRyLQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_MyuJ0EQHEeaFd8CxqyRyLQ" name="create" client="_2oduIEQGEeaFd8CxqyRyLQ" supplier="_q3y8cEQGEeaFd8CxqyRyLQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_YY-bQEQHEeaFd8CxqyRyLQ" name="create" client="_9NQtUEQFEeaFd8CxqyRyLQ" supplier="_oTfzsEQGEeaFd8CxqyRyLQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ZyTlsEQHEeaFd8CxqyRyLQ" name="create" client="_9NQtUEQFEeaFd8CxqyRyLQ" supplier="_PmgVgEQGEeaFd8CxqyRyLQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kj0ngEQHEeaFd8CxqyRyLQ" name="Client"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_nzdzUEQHEeaFd8CxqyRyLQ" name="use" client="_kj0ngEQHEeaFd8CxqyRyLQ" supplier="_BpwjQEQFEeaFd8CxqyRyLQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ojYNUEQHEeaFd8CxqyRyLQ" name="use" client="_kj0ngEQHEeaFd8CxqyRyLQ" supplier="_I3ccgEQGEeaFd8CxqyRyLQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_wKhk4EQHEeaFd8CxqyRyLQ" name="use" client="_kj0ngEQHEeaFd8CxqyRyLQ" supplier="_eyohcEQGEeaFd8CxqyRyLQ"/>
+  </packagedElement>
+</uml:Model>
