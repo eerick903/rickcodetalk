@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_h9eRYEWpEea4YqfmaOPexg" name="Strategy">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Or9MMEdQEea4YqfmaOPexg" name="com.rickcodetalk.strategy">
+    <packagedElement xmi:type="uml:Class" xmi:id="_SQ_ZMEdQEea4YqfmaOPexg" name="Character">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2v_tEUd1Eea4YqfmaOPexg" name="strategy" type="_UP6kAEdQEea4YqfmaOPexg" aggregation="composite" association="_2v_GAEd1Eea4YqfmaOPexg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NUd4MEd5Eea4YqfmaOPexg" name="executeMove"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_UP6kAEdQEea4YqfmaOPexg" name="Move">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Z_eu4EdQEea4YqfmaOPexg" name="move"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hWuCMEdQEea4YqfmaOPexg" name="Walk">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9P03EEdQEea4YqfmaOPexg" client="_hWuCMEdQEea4YqfmaOPexg" supplier="_UP6kAEdQEea4YqfmaOPexg" contract="_UP6kAEdQEea4YqfmaOPexg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0engIEdQEea4YqfmaOPexg" name="move"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_m2wjUEdQEea4YqfmaOPexg" name="Run">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-FvycEdQEea4YqfmaOPexg" client="_m2wjUEdQEea4YqfmaOPexg" supplier="_UP6kAEdQEea4YqfmaOPexg" contract="_UP6kAEdQEea4YqfmaOPexg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_2ODdcEdQEea4YqfmaOPexg" name="move"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vogs0EdQEea4YqfmaOPexg" name="Fly">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__Dw54EdQEea4YqfmaOPexg" client="_vogs0EdQEea4YqfmaOPexg" supplier="_UP6kAEdQEea4YqfmaOPexg" contract="_UP6kAEdQEea4YqfmaOPexg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3x0WQEdQEea4YqfmaOPexg" name="move"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2v_GAEd1Eea4YqfmaOPexg" visibility="public" memberEnd="_2v_tEUd1Eea4YqfmaOPexg _2v_tEkd1Eea4YqfmaOPexg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2v_GAUd1Eea4YqfmaOPexg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2v_tEEd1Eea4YqfmaOPexg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2v_tEkd1Eea4YqfmaOPexg" name="context" type="_SQ_ZMEdQEea4YqfmaOPexg" association="_2v_GAEd1Eea4YqfmaOPexg"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iKCtwEWpEea4YqfmaOPexg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iKEi8EWpEea4YqfmaOPexg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </profileApplication>
+</uml:Model>
