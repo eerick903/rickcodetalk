@@ -11,3 +11,7 @@ mean/meantut01/node_modules
 mean/meantut02/node_modules
 mean/meantut03/node_modules
 mean/meantut0000
+mean/meantut04/client/node_modules
+mean/meantut04/client/.idea
+mean/meantut04/client/typings
+*.log
