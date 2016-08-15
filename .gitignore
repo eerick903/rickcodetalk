@@ -15,3 +15,7 @@ mean/meantut04/client/node_modules
 mean/meantut04/client/.idea
 mean/meantut04/client/typings
 *.log
+ionic2/.idea
+ionic2/*/.idea
+ionic2/*/hooks
+ionic2/*/resources
