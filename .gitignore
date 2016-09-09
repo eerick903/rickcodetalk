@@ -17,6 +17,12 @@ mean/meantut04/client/typings
 mean/meantut05/client/node_modules
 mean/meantut05/client/.idea
 mean/meantut05/client/typings
+
+mean/meantut06/client/node_modules
+mean/meantut06/client/.idea
+mean/meantut06/client/typings
+mean/meantut06/server/node_modules
+
 *.log
 ionic2/.idea
 ionic2/*/.idea
