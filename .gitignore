@@ -28,6 +28,11 @@ mean/meantut07/client/.idea
 mean/meantut07/client/typings
 mean/meantut07/server/node_modules
 
+planningPoker/client/node_modules
+planningPoker/client/.idea
+planningPoker/client/typings
+planningPoker/server/node_modules
+
 *.log
 ionic2/.idea
 ionic2/*/.idea

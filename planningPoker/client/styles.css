@@ -1,0 +1,63 @@
+
+.client-panel {
+
+    margin-top: 50px
+}
+
+
+.host-panel {
+    display:block;
+    overflow:auto;
+    margin-top: 50px
+}
+
+.poker-card {
+
+    border-style: solid;
+}
+
+.poker-card-number {
+
+    font-size: 50px;
+    text-align: center;
+}
+
+.poker-card-user-name {
+
+    font-size: 15px;
+    bottom: 0px;
+    text-align: center;
+}
+
+.poker-card {
+
+    width: 100px
+}
+
+.main-menu-form {
+
+    margin-top: 50px
+
+}
+
+.error-message {
+
+    color: red;
+    margin-top: 10px;
+    border-style: solid;
+}
+
+.host-result {
+
+    margin-bottom: 5px;
+}
+
+.result-button {
+
+    margin-top: 10px;
+}
+
+.result-card {
+
+    margin-top: 10px;
+}
